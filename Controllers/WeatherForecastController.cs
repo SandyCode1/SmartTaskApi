@@ -29,5 +29,13 @@ namespace SmartTaskApi.Controllers
             })
             .ToArray();
         }
+
+
+        //write a new endpoint that returns a string "Hello from feature A"
+        [HttpGet("featureA", Name = "GetWeatherForecastFeatureA")]
+        public string GetFeatureA()
+        {
+            return "Hello from feature A";
+        }
     }
 }
